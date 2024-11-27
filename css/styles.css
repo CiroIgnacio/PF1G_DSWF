@@ -56,15 +56,6 @@ a {
   height: 70px;
 }
 
-.site-logo img {
-  height: 50px;
-  width: auto;
-}
-
-.main-nav {
-  display: flex;
-}
-
 .main-nav a {
   color: #fff;
   text-decoration: none;
@@ -72,88 +63,6 @@ a {
   font-weight: 500;
 }
 
-@media (max-width: 991px) {
-  .whb-flex-row {
-    position: relative;
-    justify-content: center;
-  }
-
-  .site-logo {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-
-  .whb-mobile-left {
-    position: absolute;
-    left: 15px;
-  }
-
-  .woodmart-burger-icon {
-    display: block;
-    padding: 10px;
-    cursor: pointer;
-  }
-
-  .woodmart-burger-label {
-    display: none;
-  }
-
-  .woodmart-burger {
-    display: block;
-    width: 25px;
-    height: 2px;
-    background: #fff;
-    position: relative;
-  }
-
-  .woodmart-burger:before,
-  .woodmart-burger:after {
-    content: "";
-    position: absolute;
-    width: 25px;
-    height: 2px;
-    background: #fff;
-    left: 0;
-  }
-
-  .woodmart-burger:before {
-    top: -8px;
-  }
-
-  .woodmart-burger:after {
-    bottom: -8px;
-  }
-
-  .main-nav {
-    display: none;
-    position: fixed;
-    top: 70px;
-    left: 0;
-    width: 100%;
-    height: calc(100vh - 70px);
-    background: var(--primary-color);
-    padding: 20px;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .main-nav.active {
-    display: flex;
-  }
-
-  .main-nav a {
-    padding: 15px 0;
-    font-size: 18px;
-    display: block;
-    width: 100%;
-    text-align: center;
-  }
-
-  .whb-visible-lg {
-    display: none;
-  }
-}
 
 .whb-main-header {
   background: transparent;
@@ -177,7 +86,7 @@ a {
   height: auto;
   transition: all 0.3s ease;
   position: absolute;
-  top: 15px;
+  top: 35%;
   left: 5%;
   z-index: 290;
 }
@@ -939,23 +848,6 @@ a {
   object-fit: fit;
 }
 
-@media (max-width: 1080px) {
-  .products-store-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 768px) {
-  .products-store-grid {
-    gap: 20px;
-  }
-}
-
-@media (max-width: 480px) {
-  .products-store-grid {
-    grid-template-columns: 1fr;
-  }
-}
 
 /*///////////////// TUTORIALES //////////////////*/
 
@@ -1047,25 +939,6 @@ a {
   align-self: flex-start;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-  .tutorials-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .tutorial-promo-card {
-    height: 200px;
-  }
-
-  .tutorial-content {
-    padding: 20px;
-  }
-
-  .tutorial-content h2 {
-    font-size: 24px;
-  }
-}
-
 /*///////////////// MENU YERBA //////////////////*/
 .menu-grid-section {
   padding: 60px 0;
@@ -1153,25 +1026,6 @@ a {
   height: 400px;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-  .menu-grid-dulzuras,
-  .menu-grid-salados,
-  .menu-grid-wide {
-    grid-template-columns: 1fr;
-  }
-
-  .menu-grid-salados .left-column,
-  .menu-grid-salados .right-column {
-    order: 0; /* Reset del orden en móvil */
-  }
-
-  .menu-item,
-  .menu-item.large,
-  .menu-grid-wide .menu-item {
-    height: 250px;
-  }
-}
 
 /*///////////////// TRABAJA CON NOSOTROS //////////////////*/
 .trabajo-section {
@@ -1282,29 +1136,7 @@ a {
   background-color: #723a0f;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-  .form-row {
-    flex-direction: column;
-    gap: 15px;
-  }
 
-  .trabajo-title {
-    font-size: 24px;
-  }
-}
-
-@media (max-width: 480px) {
-  .file-input-wrapper {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .file-input-message {
-    margin-left: 0;
-    margin-top: 5px;
-  }
-}
 
 /*///////////////// CONTACTO //////////////////*/
 .contact-section {
@@ -1371,152 +1203,10 @@ a {
   color: var(--secondary-color);
 }
 
-@media (max-width: 768px) {
-  .contact-grid {
-    grid-template-columns: 1fr;
-    gap: 40px;
-  }
 
-  .vertical-separator {
-    display: none;
-  }
-
-  .social-icons-vertical {
-    flex-direction: row;
-    justify-content: center;
-    gap: 40px;
-  }
-}
-
-@media (max-width: 768px) {
-  .social-icons-vertical {
-    flex-direction: row;
-    justify-content: center;
-    gap: 40px;
-  }
-}
 
 /*///////////////// RESPONSIVE //////////////////*/
-@media (max-width: 1080px) {
-  .container {
-    width: 95%;
-  }
 
-  .nav-list {
-    gap: 1rem;
-  }
-  .mate-types-grid {
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .center-image {
-    grid-column: span 2;
-    width: 100%;
-    max-width: 600px;
-    margin: 40px auto;
-  }
-}
-
-@media (max-width: 768px) {
-  .main-nav {
-    display: none;
-  }
-
-  .mobile-menu-icon {
-    display: block;
-  }
-
-  .hero-content h1 {
-    font-size: 2.5rem;
-  }
-  .promo-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .promo-content {
-    padding: 30px;
-  }
-
-  .promo-content h3 {
-    font-size: 24px;
-  }
-  .mate-types-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .center-image {
-    grid-column: 1;
-  }
-
-  .mate-type {
-    padding: 0;
-  }
-  .footer-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-/* Mobile 1 */
-@media (max-width: 480px) {
-  .hero-content {
-    margin-left: 5%;
-    margin-right: 5%;
-  }
-
-  .hero-content h1 {
-    font-size: 2rem;
-  }
-
-  .products-grid {
-    grid-template-columns: 1fr;
-  }
-  .footer-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .newsletter-form {
-    flex-direction: column;
-  }
-}
-
-/* Mobile 2 */
-@media (max-width: 375px) {
-  .hero-content h2 {
-    font-size: 1.2rem;
-  }
-
-  .hero-content h1 {
-    font-size: 1.8rem;
-  }
-}
-
-.menu-item {
-  position: relative;
-  background-color: #f0f0f0; /* Color de fondo para placeholder */
-}
-
-.menu-item::before {
-  content: "Imagen no disponible";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: #666;
-  font-size: 14px;
-  text-transform: uppercase;
-  z-index: 1;
-}
-
-.menu-item img {
-  position: relative;
-  z-index: 2;
-}
-
-.menu-item img:not([src]),
-.menu-item img[src=""],
-.menu-item img[src="#"] {
-  opacity: 0;
-}
 .woodmart-burger-icon {
   display: none;
   cursor: pointer;
@@ -1543,13 +1233,115 @@ a {
   transform: translateX(0);
 }
 
+@media (max-width: 1080px) {
+  .container {
+    width: 95%;
+  }
+
+  .nav-list {
+    gap: 1rem;
+  }
+
+  .mate-types-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .center-image {
+    grid-column: span 2;
+    width: 100%;
+    max-width: 600px;
+    margin: 40px auto;
+  }
+
+  .products-store-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 @media (max-width: 991px) {
+  .whb-flex-row {
+    position: relative;
+    justify-content: center;
+  }
+
+  .header-logo {
+    left: 50%;
+  }
+
+  .whb-mobile-left {
+    position: absolute;
+    left: 15px;
+  }
+
   .woodmart-burger-icon {
     display: block;
   }
 
+  .woodmart-burger-label {
+    display: none;
+  }
+
   .whb-visible-lg {
     display: none;
+  }
+
+  .woodmart-burger {
+    display: block;
+    width: 25px;
+    height: 2px;
+    background: #fff;
+    position: relative;
+  }
+
+  .woodmart-burger:before,
+  .woodmart-burger:after {
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 2px;
+    background: #fff;
+    left: 0;
+  }
+
+  .woodmart-burger:before {
+    top: -8px;
+  }
+
+  .woodmart-burger:after {
+    bottom: -8px;
+  }
+
+  .main-nav {
+    display: none;
+    position: fixed;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    height: calc(100vh - 70px);
+    background: var(--primary-color);
+    padding: 20px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .main-nav.active {
+    display: flex;
+  }
+
+  .main-nav a {
+    padding: 15px 0;
+    font-size: 18px;
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+
+  .mobile-nav {
+    display: none;
+  }
+
+  .mobile-nav.active {
+    display: block;
   }
 
   .mobile-nav ul {
@@ -1570,4 +1362,164 @@ a {
   .mobile-nav a:hover {
     color: var(--secondary-color);
   }
+  .product-overlay {
+    display: none;
+  }
+  .product-card:hover > img {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .main-nav {
+    display: none;
+  }
+
+  .mobile-menu-icon {
+    display: block;
+  }
+
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .promo-grid,
+  .mate-types-grid,
+  .tutorials-grid,
+  .menu-grid-dulzuras,
+  .menu-grid-salados,
+  .menu-grid-wide {
+    grid-template-columns: 1fr;
+  }
+
+  .products-store-grid {
+    gap: 20px;
+  }
+
+  .promo-content {
+    padding: 30px;
+  }
+
+  .promo-content h3 {
+    font-size: 24px;
+  }
+
+  .center-image {
+    grid-column: 1;
+  }
+
+  .mate-type {
+    padding: 0;
+  }
+
+  .footer-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .menu-item,
+  .menu-item.large,
+  .menu-grid-wide .menu-item {
+    height: 250px;
+  }
+
+  .menu-grid-salados .left-column,
+  .menu-grid-salados .right-column {
+    order: 0;
+  }
+
+  .tutorial-promo-card {
+    height: 200px;
+  }
+
+  .tutorial-content {
+    padding: 20px;
+  }
+
+  .tutorial-content h2 {
+    font-size: 24px;
+  }
+
+  .form-row {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .trabajo-title {
+    font-size: 24px;
+  }
+
+  .social-icons-vertical {
+    flex-direction: row;
+    justify-content: center;
+    gap: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-content {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .products-grid,
+  .products-store-grid,
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .newsletter-form {
+    flex-direction: column;
+  }
+
+  .file-input-wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .file-input-message {
+    margin-left: 0;
+    margin-top: 5px;
+  }
+}
+
+@media (max-width: 375px) {
+  .hero-content h2 {
+    font-size: 1.2rem;
+  }
+
+  .hero-content h1 {
+    font-size: 1.8rem;
+  }
+}
+
+.menu-item {
+  position: relative;
+  background-color: #f0f0f0;
+}
+
+.menu-item::before {
+  content: "Imagen no disponible";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #666;
+  font-size: 14px;
+  text-transform: uppercase;
+  z-index: 1;
+}
+
+.menu-item img {
+  position: relative;
+  z-index: 2;
+}
+
+.menu-item img:not([src]),
+.menu-item img[src=""],
+.menu-item img[src="#"] {
+  opacity: 0;
 }

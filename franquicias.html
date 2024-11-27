@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tienda de Mate</title>
+    <link rel="icon" type="image/svg+xml" href="img/logo.svg" />
     <link rel="stylesheet" href="css/styles.css" />
     <!-- Google Fonts -->
     <link
@@ -19,7 +20,8 @@
       href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@200;300;400;600&family=Roboto:wght@300;400;500&display=swap"
       rel="stylesheet"
     />
-    <script src="js/main.js"></script>
+    <script src="js/main.js" defer></script>
+
   </head>
   <body>
     <!-- Header  -->
@@ -46,7 +48,7 @@
                   </a>
                 </div>
               </div>
-              <!-- Navegación -->
+              <!-- Navegación Desktop -->
               <div class="whb-column whb-col-center whb-visible-lg">
                 <div class="whb-navigation whb-primary-menu">
                   <nav
@@ -86,13 +88,10 @@
                 class="whb-column whb-col-right whb-visible-lg whb-empty-column"
               ></div>
 
-              <!-- Menú móvil -->
+              <!-- Botón de menú móvil -->
               <div class="whb-column whb-mobile-left whb-hidden-lg">
-                <div
-                  class="woodmart-burger-icon wd-tools-element mobile-nav-icon"
-                >
-                  <span class="woodmart-burger wd-tools-icon"></span>
-                  <span class="woodmart-burger-label">Menu</span>
+                <div class="woodmart-burger-icon" id="burger-menu">
+                  <span class="woodmart-burger"></span>
                 </div>
               </div>
             </div>

@@ -3,9 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/svg+xml" href="img/logo.svg" />
     <title>Tienda de Mate</title>
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="icon" type="image/svg+xml" href="../img/logo.svg" />
+    <link rel="stylesheet" href="../css/styles.css" />
     <!-- Google Fonts -->
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap"
@@ -20,7 +20,8 @@
       href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@200;300;400;600&family=Roboto:wght@300;400;500&display=swap"
       rel="stylesheet"
     />
-    <script src="js/main.js"></script>
+    <script src="../js/main.js" defer></script>
+
   </head>
   <body>
     <!-- Header  -->
@@ -35,19 +36,19 @@
               <div class="site-logo">
                 <div class="woodmart-logo-wrap">
                   <a
-                    href="index.html"
+                    href="../index.html"
                     class="woodmart-logo woodmart-main-logo"
                     rel="home"
                   >
                     <img
-                      src="img/logo.svg"
+                      src="../img/logo.svg"
                       alt="Tienda de Mate"
                       class="header-logo"
                     />
                   </a>
                 </div>
               </div>
-              <!-- Navegación -->
+              <!-- Navegación Desktop -->
               <div class="whb-column whb-col-center whb-visible-lg">
                 <div class="whb-navigation whb-primary-menu">
                   <nav
@@ -60,9 +61,9 @@
                       <li>
                         <a href="tutoriales.html"><span>TUTORIALES</span></a>
                       </li>
-                      <li>
+                      <!-- <li>
                         <a href="locales.html"><span>LOCALES</span></a>
-                      </li>
+                      </li> -->
                       <li>
                         <a href="menu-tienda.html"><span>NUESTRO MENÚ</span></a>
                       </li>
@@ -87,13 +88,10 @@
                 class="whb-column whb-col-right whb-visible-lg whb-empty-column"
               ></div>
 
-              <!-- Menú móvil -->
+              <!-- Botón de menú móvil -->
               <div class="whb-column whb-mobile-left whb-hidden-lg">
-                <div
-                  class="woodmart-burger-icon wd-tools-element mobile-nav-icon"
-                >
-                  <span class="woodmart-burger wd-tools-icon"></span>
-                  <span class="woodmart-burger-label">Menu</span>
+                <div class="woodmart-burger-icon" id="burger-menu">
+                  <span class="woodmart-burger"></span>
                 </div>
               </div>
             </div>
@@ -101,69 +99,63 @@
         </div>
       </div>
     </header>
-    <section class="contact-section">
+    <section class="trabajo-section">
       <div class="container">
-        <div class="contact-grid">
-          <!-- Columna del formulario -->
-          <div class="contact-form-col">
-            <div class="section-title">
-              <h2>COMUNICATE CON NOSOTROS</h2>
-              <span class="title-separator"></span>
-            </div>
-            <p class="contact-desc">
-              Ante cualquier consulta no dudes en comunicarte. Dejá tus datos y
-              consulta utilizando el formulario a continuación y nos
-              contactaremos a la brevedad.
-            </p>
-
-            <form class="contact-form">
-              <div class="form-group">
-                <label for="nombre">Nombre</label>
-                <input type="text" id="nombre" name="nombre" required />
-              </div>
-
-              <div class="form-group">
-                <label for="email">E-mail</label>
-                <input type="email" id="email" name="email" required />
-              </div>
-
-              <div class="form-group">
-                <label for="asunto">Asunto</label>
-                <input type="text" id="asunto" name="asunto" required />
-              </div>
-
-              <div class="form-group">
-                <label for="mensaje">Mensaje</label>
-                <textarea
-                  id="mensaje"
-                  name="mensaje"
-                  rows="6"
-                  required
-                ></textarea>
-              </div>
-
-              <button type="submit" class="btn-enviar">ENVIAR</button>
-            </form>
+        <div class="trabajo-header">
+          <span class="trabajo-subtitle">CONOCÉ TODAS LAS OPCIONES</span>
+          <div class="section-title">
+            <h2>CONVERTITE EN FRANQUICIADO</h2>
           </div>
-
-          <div class="vertical-separator"></div>
-
-          <!-- Columna de redes sociales -->
-          <div class="social-col">
-            <div class="section-title">
-              <h2>NUESTRAS REDES SOCIALES</h2>
-              <span class="title-separator"></span>
-            </div>
-            <div class="social-icons-vertical">
-              <a href="#" class="social-icon-large">
-                <i class="fab fa-facebook-f"></i>
-              </a>
-              <a href="#" class="social-icon-large">
-                <i class="fab fa-instagram"></i>
-              </a>
-            </div>
-          </div>
+          <p class="trabajo-desc">
+            Querés ser parte de este equipo? Dejanos tus datos para recibir mas
+            información, y nos pondremos en contacto para contarte todas las
+            posibilidades de tu próxima franquicia Tienda de Mate!
+          </p>
         </div>
+
+        <form class="trabajo-form">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="nombre">Nombre</label>
+              <input type="text" id="nombre" name="nombre" required />
+            </div>
+            <div class="form-group">
+              <label for="apellido">Apellido</label>
+              <input type="text" id="apellido" name="apellido" required />
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="email">E-mail</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+            <div class="form-group">
+              <label for="telefono">Teléfono</label>
+              <input type="tel" id="telefono" name="telefono" required />
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="como-llegaste">¿Cómo llegaste a nosotros?</label>
+              <input
+                type="text"
+                id="como-llegaste"
+                name="como-llegaste"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="zona"
+                >¿En que zona te interesaría instalar la franquicia?</label
+              >
+              <input type="text" id="zona" name="zona" required />
+            </div>
+          </div>
+
+          <button type="submit" class="btn-enviar">ENVIAR</button>
+        </form>
       </div>
     </section>
     <!-- Footer -->
@@ -171,14 +163,14 @@
       <div class="container">
         <div class="footer-grid">
           <div class="footer-col">
-            <img src="img/logo.svg" alt="Tienda de Mate" class="footer-logo" />
+            <img src="../img/logo.svg" alt="Tienda de Mate" class="footer-logo" />
           </div>
           <div class="footer-col">
             <h4>Contenidos</h4>
             <ul>
-              <li><a href="index.html">Inicio</a></li>
+              <li><a href="../index.html">Inicio</a></li>
               <li><a href="tienda.html">Nuestro Mate</a></li>
-              <li><a href="locales.html">Locales</a></li>
+              <!-- <li><a href="locales.html">Locales</a></li> -->
               <li><a href="menu-tienda.html">Nuestro menú</a></li>
             </ul>
           </div>
@@ -186,7 +178,7 @@
             <h4>Necesitás Ayuda</h4>
             <ul>
               <li><a href="tutoriales.html">Tutoriales</a></li>
-              <li><a href="trabaja-en-tdc.html">Trabajá con nosotros</a></li>
+              <li><a href="trabaja.html">Trabajá con nosotros</a></li>
               <li><a href="franquicias.html">Franquicias</a></li>
               <li><a href="contacto.html">Contacto</a></li>
             </ul>
